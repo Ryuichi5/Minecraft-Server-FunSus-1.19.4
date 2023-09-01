@@ -32,6 +32,8 @@ https://drive.google.com/drive/folders/1jtZrpotmAuCvZ3FX-WwwUawglTGSZNU2?usp=dri
 - jei 
 เป็นต้น
 
+<h3>และที่สำคัญคือ ต้องมีการใช้ Radmin ควบคู่ เพื่อ Lan กันและกัน</h3>
+
 ## Q&A ปัญหาต่างๆ
 
 <h3>พอเข้าเซิฟไปแล้วตีเพื่อนที่เป็นคนเปิดเซิฟแล้วหลุด / กด E เปิด Inventory ก็หลุด</h3>

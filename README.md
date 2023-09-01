@@ -37,7 +37,7 @@ https://drive.google.com/drive/folders/1jtZrpotmAuCvZ3FX-WwwUawglTGSZNU2?usp=dri
 <h3>พอเข้าเซิฟไปแล้วตีเพื่อนที่เป็นคนเปิดเซิฟแล้วหลุด / กด E เปิด Inventory ก็หลุด</h3>
 Thug Hunter : อาจเป็นกรณีที่ Host คนเปิดเซิฟ Mod ไม่ครบ ต้องทดสอบโดยการเข้าผ่าน Lan กันปกติ การเข้าแบบนี้จะมีการแจ้งเตือนว่าขาดหรือเกิน Mod อะไร
 
-<h3>เปิดเซิฟไม่ได้แจ้ง Error <h3>
+<h3>เปิดเซิฟไม่ได้แจ้ง Error</h3>
 Thug Hunter : ส่วนใหญ่จะมาจากการไม่ Support ของ Mod ต้องดูรายระเอียดก่อนว่า เวอร์ชั่นตรงกันไหม , เป็น Mod Client หรือเปล่า
 
 <hr/>

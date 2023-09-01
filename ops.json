@@ -1,0 +1,26 @@
+[
+  {
+    "uuid": "4b21eb17-c348-306a-9a1e-b1530da85af3",
+    "name": "hee_ro",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "a22dddcb-4718-3d3b-bada-5be5a311b598",
+    "name": "Treemit",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "a09cd1e3-071f-3a1a-a26d-178875ecf4ff",
+    "name": "BrandonBurengton",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "29bd9584-4f23-35d6-a495-4db09736c6f6",
+    "name": "Klsara",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  }
+]

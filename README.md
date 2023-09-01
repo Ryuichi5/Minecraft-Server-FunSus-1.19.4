@@ -40,6 +40,10 @@ Thug Hunter : อาจเป็นกรณีที่ Host คนเปิด
 <h3>เปิดเซิฟไม่ได้แจ้ง Error</h3>
 Thug Hunter : ส่วนใหญ่จะมาจากการไม่ Support ของ Mod ต้องดูรายระเอียดก่อนว่า เวอร์ชั่นตรงกันไหม , เป็น Mod Client หรือเปล่า
 
+<h3>เมื่อ Run เซิฟแล้ว ขึ้น error: cannot find module @nuxt/kit</h3>
+Thug Hunter : ติดตั้ง JDK Development Kit 17.0.8 ตามลิ้งนี้ได้ https://www.oracle.com/java/technologies/downloads/#java17
+แต่ถ้าหากยังไม่ได้ผล ให้ถอนตัวติดตั้ง 17.0.8 หรือตัวอื่นๆ ที่ไม่เกี่ยวข้องกับเวอร์ชั่น 17.0.8 แล้วให้ลองติดตั้งใหม่อีกครั้ง
+
 <hr/>
 
 <h1>ขอให้สนุกครับสมาชิก Thug Hunter</h1>

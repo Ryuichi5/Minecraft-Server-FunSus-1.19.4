@@ -1,0 +1,138 @@
+---- Minecraft Crash Report ----
+// Surprise! Haha. Well, this is awkward.
+
+Time: 2023-09-02 05:04:54
+Description: Exception in server tick loop
+
+java.lang.IllegalStateException: Failed to initialize server
+	at net.minecraft.server.MinecraftServer.m_130011_(MinecraftServer.java:638) ~[server-1.19.4-20230314.122934-srg.jar%23213!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:aether.mixins.json:common.accessor.MinecraftServerAccessor,pl:mixin:APP:citadel.mixins.json:MinecraftServerMixin,pl:mixin:A}
+	at net.minecraft.server.MinecraftServer.m_206580_(MinecraftServer.java:252) ~[server-1.19.4-20230314.122934-srg.jar%23213!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:aether.mixins.json:common.accessor.MinecraftServerAccessor,pl:mixin:APP:citadel.mixins.json:MinecraftServerMixin,pl:mixin:A}
+	at java.lang.Thread.run(Thread.java:833) ~[?:?] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.19.4
+	Minecraft Version ID: 1.19.4
+	Operating System: Windows 11 (amd64) version 10.0
+	Java Version: 17.0.8, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode, sharing), Oracle Corporation
+	Memory: 467382480 bytes (445 MiB) / 1251999744 bytes (1194 MiB) up to 4125097984 bytes (3934 MiB)
+	CPUs: 12
+	Processor Vendor: AuthenticAMD
+	Processor Name: AMD Ryzen 5 4600H with Radeon Graphics         
+	Identifier: AuthenticAMD Family 23 Model 96 Stepping 1
+	Microarchitecture: unknown
+	Frequency (GHz): 2.99
+	Number of physical packages: 1
+	Number of physical CPUs: 6
+	Number of logical CPUs: 12
+	Graphics card #0 name: AMD Radeon(TM) Graphics
+	Graphics card #0 vendor: Advanced Micro Devices, Inc. (0x1002)
+	Graphics card #0 VRAM (MB): 512.00
+	Graphics card #0 deviceId: 0x1636
+	Graphics card #0 versionInfo: DriverVersion=27.20.21030.11000
+	Graphics card #1 name: NVIDIA GeForce GTX 1650
+	Graphics card #1 vendor: NVIDIA (0x10de)
+	Graphics card #1 VRAM (MB): 4095.00
+	Graphics card #1 deviceId: 0x1f99
+	Graphics card #1 versionInfo: DriverVersion=31.0.15.1694
+	Memory slot #0 capacity (MB): 8192.00
+	Memory slot #0 clockSpeed (GHz): 3.20
+	Memory slot #0 type: DDR4
+	Memory slot #1 capacity (MB): 8192.00
+	Memory slot #1 clockSpeed (GHz): 3.20
+	Memory slot #1 type: DDR4
+	Virtual memory max (MB): 24437.06
+	Virtual memory used (MB): 11890.42
+	Swap memory total (MB): 8704.00
+	Swap memory used (MB): 0.00
+	JVM Flags: 0 total; 
+	Server Running: true
+	Data Packs: vanilla, mod:forge, mod:extraarmor (incompatible), mod:betterdungeons, mod:spawn_animations_mr (incompatible), mod:playeranimator (incompatible), mod:extratrades, mod:giantspawn (incompatible), mod:aether, mod:jei (incompatible), mod:libraryferret, mod:ageofweapons, mod:awesomedungeon, mod:citadel (incompatible), mod:alexsmobs, mod:torchhit (incompatible), mod:yungsapi, mod:bookshelf (incompatible), mod:kevin_trophy (incompatible), mod:minetraps, mod:cloth_config (incompatible), mod:sound_physics_remastered (incompatible), mod:pfm (incompatible), mod:travelerstitles, mod:revampedwolf (incompatible), mod:mcwbridges (incompatible), mod:bettercombat (incompatible), mod:mcpaint, mod:creativecore, mod:weaponmaster (incompatible), mod:eyesinthedarkness (incompatible), mod:betterfpsdist (incompatible), mod:you_died (incompatible), mod:northerncompass (incompatible), mod:cataclysm, mod:curios (incompatible), mod:simple_guns_reworked (incompatible), mod:hmag, mod:collective (incompatible), mod:entityculling (incompatible), mod:bettervillage, mod:backpacked (incompatible), mod:argentinas_delight (incompatible), mod:cfm (incompatible), mod:architectury (incompatible), mod:magistuarmory (incompatible), mod:storagecabinet (incompatible), mod:aquaculture, mod:friendlyfire (incompatible), mod:t_and_t (incompatible), mod:playerrevive, mod:exlinefurniture, mod:recruits (incompatible), mod:caupona (incompatible), mod:cristellib (incompatible), mod:tlskincape (incompatible), mod:travelersbackpack (incompatible)
+	Enabled Feature Flags: minecraft:vanilla
+	World Generation: Experimental
+	Is Modded: Definitely; Server brand changed to 'forge'
+	Type: Dedicated Server (map_server.txt)
+	ModLauncher: 10.0.8+10.0.8+main.0ef7e830
+	ModLauncher launch target: forgeserver
+	ModLauncher naming: srg
+	ModLauncher services: 
+		mixin-0.8.5.jar mixin PLUGINSERVICE 
+		eventbus-6.0.3.jar eventbus PLUGINSERVICE 
+		fmlloader-1.19.4-45.1.2.jar slf4jfixer PLUGINSERVICE 
+		fmlloader-1.19.4-45.1.2.jar object_holder_definalize PLUGINSERVICE 
+		fmlloader-1.19.4-45.1.2.jar runtime_enum_extender PLUGINSERVICE 
+		fmlloader-1.19.4-45.1.2.jar capability_token_subclass PLUGINSERVICE 
+		accesstransformers-8.0.4.jar accesstransformer PLUGINSERVICE 
+		fmlloader-1.19.4-45.1.2.jar runtimedistcleaner PLUGINSERVICE 
+		modlauncher-10.0.8.jar mixin TRANSFORMATIONSERVICE 
+		modlauncher-10.0.8.jar fml TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		minecraft@1.0
+		lowcodefml@null
+		javafml@null
+	Mod List: 
+		Extra-Armor-Mod-Forge-1.19.4.jar                  |Extra Armor                   |extraarmor                    |1.17.2              |DONE      |Manifest: NOSIGNATURE
+		YUNGs-Better-Dungeons-Mod-Forge-1.19.4.jar        |YUNG's Better Dungeons        |betterdungeons                |1.19.4-Forge-3.4.0  |DONE      |Manifest: NOSIGNATURE
+		Spawn-Animations-Mod-Forge-Fabric-Quilt-1.20.1.jar|Spawn Animations              |spawn_animations_mr           |1.9.1               |DONE      |Manifest: NOSIGNATURE
+		player-animation-lib-forge-1.0.2+1.19.4.jar       |Player Animator               |playeranimator                |1.0.2+1.19.4        |DONE      |Manifest: NOSIGNATURE
+		Extra-Trades-Mod-Forge-1.19.4.jar                 |Extra Trades                  |extratrades                   |1.19.4-1.2          |DONE      |Manifest: NOSIGNATURE
+		Giant-Spawn-Mod-Forge-Fabric-Quilt-1.19.4.jar     |Giant Spawn                   |giantspawn                    |4.5                 |DONE      |Manifest: NOSIGNATURE
+		aether-1.19.4-1.0.0-beta.5.1-forge.jar            |The Aether                    |aether                        |1.19.4-1.0.0-beta.5.|DONE      |Manifest: NOSIGNATURE
+		jei-1.19.4-forge-13.1.0.11.jar                    |Just Enough Items             |jei                           |13.1.0.11           |DONE      |Manifest: NOSIGNATURE
+		libraryferret-forge-1.19.4-4.0.0.jar              |Library ferret                |libraryferret                 |4.0.0               |DONE      |Manifest: NOSIGNATURE
+		Age-of-Weapons-Mod-Forge-1.19.4.jar               |Age of Weapons - Reforged     |ageofweapons                  |0.15.1              |DONE      |Manifest: NOSIGNATURE
+		Awesome-Dungeon-Mod-Forge-1.19.4.jar              |Awesome dungeon               |awesomedungeon                |3.2.0               |DONE      |Manifest: NOSIGNATURE
+		citadel-2.3.4-1.19.4.jar                          |Citadel                       |citadel                       |2.3.4               |DONE      |Manifest: NOSIGNATURE
+		alexsmobs-1.22.3.jar                              |Alex's Mobs                   |alexsmobs                     |1.22.3              |DONE      |Manifest: NOSIGNATURE
+		TravelersBackpack-1.19.4-8.4.12.jar               |Traveler's Backpack           |travelersbackpack             |8.4.12              |DONE      |Manifest: NOSIGNATURE
+		torchhit-1.19.4-6.0.1.2-forge.jar                 |Torch hit!                    |torchhit                      |6.0.1.2             |DONE      |Manifest: NOSIGNATURE
+		YungsApi-1.19.4-Forge-3.10.1.jar                  |YUNG's API                    |yungsapi                      |1.19.4-Forge-3.10.1 |DONE      |Manifest: NOSIGNATURE
+		Bookshelf-Forge-1.19.4-18.0.6.jar                 |Bookshelf                     |bookshelf                     |18.0.6              |DONE      |Manifest: eb:c4:b1:67:8b:f9:0c:db:dc:4f:01:b1:8e:61:64:39:4c:10:85:0b:a6:c4:c7:48:f0:fa:95:f2:cb:08:3a:e5
+		Ryan's+Zombies+v5+1.19.4.jar                      |Kevin trophy                  |kevin_trophy                  |5.0.0               |DONE      |Manifest: NOSIGNATURE
+		MineTraps-Mod-Forge-1.19.4.jar                    |MineTraps                     |minetraps                     |2.2.7               |DONE      |Manifest: NOSIGNATURE
+		cloth-config-10.1.105-forge.jar                   |Cloth Config v10 API          |cloth_config                  |10.1.105            |DONE      |Manifest: NOSIGNATURE
+		soundphysics-forge-1.19.4-1.1.1.jar               |Sound Physics Remastered      |sound_physics_remastered      |1.19.4-1.1.1        |DONE      |Manifest: NOSIGNATURE
+		forge-1.19.4-45.1.2-universal.jar                 |Forge                         |forge                         |45.1.2              |DONE      |Manifest: 84:ce:76:e8:45:35:e4:0e:63:86:df:47:59:80:0f:67:6c:c1:5f:6e:5f:4d:b3:54:47:1a:9f:7f:ed:5e:f2:90
+		Paladins-Furniture-Mod-Forge-1.19.4.jar           |Paladin's Furniture           |pfm                           |1.1.4               |DONE      |Manifest: NOSIGNATURE
+		Travelers-Titles-Mod-Forge-1.19.4.jar             |Traveler's Titles             |travelerstitles               |1.19.4-Forge-3.3.0  |DONE      |Manifest: NOSIGNATURE
+		RevampedWolf-Mod-Forge-1.19.4.jar                 |RevampedWolf                  |revampedwolf                  |1.19.4-4.0.0        |DONE      |Manifest: NOSIGNATURE
+		TL-Skin-and-Cape-Mod-Forge-1.19.4.jar             |TLSkinCape                    |tlskincape                    |1.28                |DONE      |Manifest: ef:fe:e7:59:91:bb:3a:06:c1:94:f4:f3:9c:3e:26:69:47:fa:2e:c5:53:d3:38:21:65:cc:04:75:e7:61:19:40
+		server-1.19.4-20230314.122934-srg.jar             |Minecraft                     |minecraft                     |1.19.4              |DONE      |Manifest: NOSIGNATURE
+		mcw-bridges-2.1.0-mc1.19.4forge.jar               |Macaw's Bridges               |mcwbridges                    |2.1.0               |DONE      |Manifest: NOSIGNATURE
+		bettercombat-forge-1.7.1+1.19.4.jar               |Better Combat                 |bettercombat                  |1.7.1+1.19.4        |DONE      |Manifest: NOSIGNATURE
+		MC-Paint-Mod-Forge-1.19.4.jar                     |Mc Paint                      |mcpaint                       |1.19.4-1.0          |DONE      |Manifest: NOSIGNATURE
+		CreativeCore_FORGE_v2.10.22_mc1.19.4.jar          |CreativeCore                  |creativecore                  |2.10.22             |DONE      |Manifest: NOSIGNATURE
+		YDMs-Weapon-Master-Mod-Forge-1.19.4.jar           |YDM's Weapon Master           |weaponmaster                  |3.0.6               |DONE      |Manifest: NOSIGNATURE
+		EyesInTheDarkness-1.19.4-1.3.9.jar                |Eyes in the Darkness          |eyesinthedarkness             |1.3.9               |DONE      |Manifest: NOSIGNATURE
+		betterfpsdist-1.19.4-2.9.jar                      |betterfpsdist mod             |betterfpsdist                 |1.19.4-2.9          |DONE      |Manifest: NOSIGNATURE
+		You-Died-Mod-Forge-1.19.4.jar                     |You Died                      |you_died                      |2.3.0.16            |DONE      |Manifest: 15:a4:a3:0e:d2:f8:64:0c:a4:97:30:5f:48:ba:5f:69:f9:23:42:14:a8:5a:60:3a:b1:b1:29:1a:0a:37:3c:79
+		Northern-Compass-Mod-Forge-1.19.4.jar             |NorthernCompass               |northerncompass               |1.19.4-1.0.14       |DONE      |Manifest: NOSIGNATURE
+		L_Enders_Cataclysm-0.84-1.19.4-Hurt-Fix.jar       |Cataclysm Mod                 |cataclysm                     |1.0                 |DONE      |Manifest: NOSIGNATURE
+		curios-forge-1.19.4-5.1.5.1.jar                   |Curios API                    |curios                        |1.19.4-5.1.5.1      |DONE      |Manifest: NOSIGNATURE
+		Simple-Guns-Reworked-Mod-Forge-1.19.4.jar         |SImple_Guns_Reworked          |simple_guns_reworked          |1.0.0               |DONE      |Manifest: NOSIGNATURE
+		Hostile-Mobs-and-Girls-Mod-Forge-1.19.4.jar       |Hostile Mobs and Girls        |hmag                          |8.0.0               |DONE      |Manifest: NOSIGNATURE
+		collective-1.19.4-6.62.jar                        |Collective                    |collective                    |6.62                |DONE      |Manifest: NOSIGNATURE
+		entityculling-forge-1.6.2-mc1.19.4.jar            |EntityCulling                 |entityculling                 |1.6.2               |DONE      |Manifest: NOSIGNATURE
+		Better-Village-Mod-Forge-1.19.4.jar               |Better village                |bettervillage                 |3.0.0               |DONE      |Manifest: NOSIGNATURE
+		backpacked-forge-1.19.4-2.1.14.jar                |Backpacked                    |backpacked                    |2.1.14              |DONE      |Manifest: NOSIGNATURE
+		Argentinas-delight-Mod-Forge-1.19.4.jar           |Argentina's Delight           |argentinas_delight            |1.1                 |DONE      |Manifest: NOSIGNATURE
+		cfm-forge-1.19.4-7.0.0-pre35.jar                  |MrCrayfish's Furniture Mod    |cfm                           |7.0.0-pre35         |DONE      |Manifest: NOSIGNATURE
+		architectury-8.2.89-forge.jar                     |Architectury                  |architectury                  |8.2.89              |DONE      |Manifest: NOSIGNATURE
+		[1.19.4-forge]-Epic-Knights-8.1.jar               |Epic Knights Mod              |magistuarmory                 |8.1                 |DONE      |Manifest: NOSIGNATURE
+		Storage-Cabinet-Mod-Forge-1.19.4.jar              |Storage Cabinet               |storagecabinet                |1.6.5               |DONE      |Manifest: NOSIGNATURE
+		Aquaculture-1.19.4-2.4.16.jar                     |Aquaculture 2                 |aquaculture                   |1.19.4-2.4.16       |DONE      |Manifest: NOSIGNATURE
+		FriendlyFire-Forge-1.19.4-16.0.2.jar              |FriendlyFire                  |friendlyfire                  |16.0.2              |DONE      |Manifest: eb:c4:b1:67:8b:f9:0c:db:dc:4f:01:b1:8e:61:64:39:4c:10:85:0b:a6:c4:c7:48:f0:fa:95:f2:cb:08:3a:e5
+		Towns-and-Towers-Mod-Forge-1.19.4.jar             |Towns and Towers              |t_and_t                       |1.10.2              |DONE      |Manifest: NOSIGNATURE
+		PlayerRevive-Mod-Forge-1.19.4.jar                 |PlayerRevive                  |playerrevive                  |2.0.16              |DONE      |Manifest: NOSIGNATURE
+		exlinefurniture-forge-1.19.4-v2.1.4.jar           |Exline's Furniture Mod        |exlinefurniture               |2.1.4               |DONE      |Manifest: NOSIGNATURE
+		recruits-1.19.4-1.10.6.jar                        |Recruits Mod                  |recruits                      |1.10.6              |DONE      |Manifest: NOSIGNATURE
+		caupona-1.19.4-0.4.4.jar                          |Caupona                       |caupona                       |1.19.4-0.4.4        |DONE      |Manifest: NOSIGNATURE
+		cristellib-forge-1.0.1.jar                        |Cristel Lib                   |cristellib                    |1.0.1               |DONE      |Manifest: NOSIGNATURE
+	Crash Report UUID: aa74f3c7-5af6-4ac8-87e3-ac69fd7701a8
+	FML: 45.1
+	Forge: net.minecraftforge:45.1.2
